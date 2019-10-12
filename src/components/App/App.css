@@ -1,39 +1,72 @@
-/* Style App Main */
+/* 
+*
+* GRID RESPONSIVE
+*
+*/
 
-/* .App {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  color: white;
-} */
-
-/* unused */
-
-/* .App-header { 
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-.App {
-  height: 100%;
-}
-
-.header {
-  position: fixed;
-}
-
-.main {
-  position: fixed;
-  background-color: cornflowerblue;
+.grid-container {
   width: 100%;
-  height: 56px;
+  padding: 0.5rem;
+  margin: auto;
 }
 
-.footer {}
+.grid-row {
+  display: table;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+[class*="grid-col-"] {
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-row > .grid-col-1 {
+  width: 8.33%;
+}
+
+.grid-row > .grid-col-2 {
+  width: 16.66%;
+}
+
+.grid-row > .grid-col-3 {
+  width: 25%;
+}
+
+.grid-row > .grid-col-4 {
+  width: 33.33%;
+}
+
+.grid-row > .grid-col-5 {
+  width: 41.66%;
+}
+
+.grid-row > .grid-col-6 {
+  width: 50%;
+}
+
+.grid-row > .grid-col-7 {
+  width: 58.33%;
+}
+
+.grid-row > .grid-col-8 {
+  width: 66.66%;
+}
+
+.grid-row > .grid-col-9 {
+  width: 75%;
+}
+
+.grid-row > .grid-col-10 {
+  width: 83.33%;
+}
+
+.grid-row > .grid-col-11 {
+  width: 91.66%;
+}
+
+.grid-row > .grid-col-12 {
+  width: 100%;
+}

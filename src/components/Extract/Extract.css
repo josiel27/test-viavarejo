@@ -1,0 +1,32 @@
+.extract {
+    width: 100%;
+    padding: 16px;
+    /* background: silver; */
+}
+
+.title-extract {
+    text-align: center;
+}
+
+.table-extract {
+    width: 100%;
+}
+
+/* Empurra todas as a primeiras colunas tabela para ESQUERDA */
+
+.table-extract tr th:first-child, .table-extract tr td:first-child {
+    text-align: left;
+}
+
+/* Empurra todas as a primeiras colunas tabela para DIREITA */
+
+.table-extract tr th:last-child, .table-extract tr td:last-child {
+    text-align: right;
+}
+
+.table-thead {
+    border-top: 5px solid red !important; 
+    background: yellow
+}
+
+.table-tfoot {}
