@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Toolbar from '../SideMenu/Toolbar/Toolbar';
 import SideDrawer from '../SideMenu/SideDrawer/SideDrawer';
+import Container from '../Container/Container';
 
 class App extends Component {
   state = {
@@ -18,16 +19,11 @@ class App extends Component {
     return (
       <div className="App">
         <header className="header">
-
           <Toolbar drawerClickHandle={this.drawerToggleClickHandle} />
           <SideDrawer show={this.state.sideDrawerOpen} drawerClickHandle={this.drawerToggleClickHandle} />
-
-
         </header>
         <main className="main">
-          <p>
-            Its content main
-      </p>
+           <Container />
         </main>
 
       </div>
