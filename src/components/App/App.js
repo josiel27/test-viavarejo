@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Toolbar from '../SideMenu/Toolbar/Toolbar';
 import SideDrawer from '../SideMenu/SideDrawer/SideDrawer';
-import Backdrop from '../SideMenu/Backdrop/Backdrop';
-
 
 class App extends Component {
   state = {
@@ -22,13 +20,8 @@ class App extends Component {
         <header className="header">
 
           <Toolbar drawerClickHandle={this.drawerToggleClickHandle} />
+          <SideDrawer show={this.state.sideDrawerOpen} drawerClickHandle={this.drawerToggleClickHandle} />
 
-          {this.state.sideDrawerOpen ?
-            <div>
-              <Backdrop />
-              <SideDrawer drawerClickHandle={this.drawerToggleClickHandle} />
-            </div>
-            : null}
 
         </header>
         <main className="main">

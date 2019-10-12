@@ -1,42 +1,60 @@
 .side-drawer {
     height: 100%;
-    width: 70%;
-    max-width: 400px;
+    width: 80%;
     background: #333333;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     right: 0;
     z-index: 200;
+    transform: translateX(101%);
+    transition: transform 0.3s ease-out;
+}
+
+.side-drawer.open {
+    transform: translateX(0)
 }
 
 .side-drawer ul {
     height: 100%;
+    padding: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .side-drawer li {
     color: white;
-    margin: 0.5rem 0;
+    padding: 0.5rem;
+    text-align: right;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+.side-drawer li:hover {
+    background: #c4c4c4;
+    color: black;
 }
 
 .side-drawer a {
-   
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-.side-drawer li:hover {
-    color: rgb(189, 189, 189);
-    cursor: pointer;
-}
-
-.close-side-menu{
+.close-side-menu {
     color: white;
     margin: 2rem;
     font-size: 1.5rem;
     cursor: pointer;
+    width: fit-content;
+}
+
+.close-side-menu:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 769px) {
+    .side-drawer {
+        max-width: 300px;
+    }
 }

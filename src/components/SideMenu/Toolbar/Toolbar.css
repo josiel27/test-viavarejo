@@ -4,6 +4,7 @@
     height: 75px;
     top: 0;
     left: 0;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
 .nav {
@@ -28,7 +29,7 @@
 }
 
 .nav-items {
-    margin-right: 1rem;
+    margin-right: 1.3rem;
 }
 
 .nav-items ul {
@@ -55,9 +56,22 @@
 }
 
 .nav-items a:hover {
-    color: red;
+    color: gray;
 }
 
 .nav-items a:active {
-    color: goldenrod;
+    color: slategrey;
+}
+
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
 }

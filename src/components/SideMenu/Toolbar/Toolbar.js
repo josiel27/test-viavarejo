@@ -7,7 +7,7 @@ const Toolbar = props => {
     return (
         <div className="nav-main">
             <nav className="nav">
-                <div className="nav-logo"><img src={logo} /></div>
+                <div className="nav-logo"><img src={logo} alt="logo" /></div>
                 <div className="nav-title"><a href="#">Controle Financeiro</a></div>
                 <div className="nav-spacer"></div>
                 <div className="nav-items">
