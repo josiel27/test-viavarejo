@@ -1,13 +1,15 @@
 /* Style App Main */
-.App {
+
+/* .App {
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
   color: white;
-}
+} */
 
 /* unused */
-.App-header { 
+
+/* .App-header { 
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
@@ -17,4 +19,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+.App {
+  height: 100%;
 }
+
+.header {
+  position: fixed;
+}
+
+.main {
+  position: fixed;
+  background-color: cornflowerblue;
+  width: 100%;
+  height: 56px;
+}
+
+.footer {}
