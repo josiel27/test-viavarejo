@@ -1,7 +1,6 @@
 .extract {
     width: 100%;
     padding: 16px;
-    /* background: silver; */
 }
 
 .title-extract {
@@ -10,23 +9,38 @@
 
 .table-extract {
     width: 100%;
+    font-size: 0.8rem;
 }
 
 /* Empurra todas as a primeiras colunas tabela para ESQUERDA */
 
 .table-extract tr th:first-child, .table-extract tr td:first-child {
     text-align: left;
+    padding-left: 1rem;
 }
 
 /* Empurra todas as a primeiras colunas tabela para DIREITA */
 
 .table-extract tr th:last-child, .table-extract tr td:last-child {
     text-align: right;
+    padding-right: 1rem;
 }
 
-.table-thead {
-    border-top: 5px solid red !important; 
-    background: yellow
+thead th {
+    border-bottom: 2px solid #d8d8d8;
+    padding-left: 3rem !important;
 }
 
-.table-tfoot {}
+tbody td {
+    border-bottom: 2px solid #d8d8d8;
+    height: 35px;
+}
+
+tfoot th {
+    border-top: 2px solid #d8d8d8;
+}
+
+tbody td>span {
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+}

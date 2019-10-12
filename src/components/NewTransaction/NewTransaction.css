@@ -9,3 +9,36 @@
 .transaction-title {
     text-align: center;
 }
+
+/* REMOVE O SPIN DO TYPE BUTTON NUMBER */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Style dos inputs do formulario */
+
+form, label {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    justify-content: left !important;
+}
+
+.input-style {
+    height: 35px;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+    border: 1px solid #d8d8d8;
+}
+
+.submit-style {
+    background: #333333;
+    color: white;
+    margin-top: 1rem;
+}

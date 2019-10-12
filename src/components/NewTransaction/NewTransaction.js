@@ -20,24 +20,28 @@ const NewTransaction = (props) => {
             <div className="transaction-title">Nova transação</div>
 
             <form className="grid-row" onSubmit={(e) => { props.param.change.handleSubmit(e) }}>
-
-                <select className="grid-col-12" value={props.param.state.transaction} onChange={props.param.change.handleChangeTransaction} required>
+                <label className="grid-col-12">Tipo de transação</label>
+                <select className="grid-col-12 input-style" value={props.param.state.transaction} onChange={props.param.change.handleChangeTransaction} required>
                     {getOptionsTransactionType()}
                 </select>
 
-                <input className="grid-col-12"
+
+                <label className="grid-col-12">Nome da mercadoria</label>
+                <input className="grid-col-12 input-style"
                     value={props.param.state.transaction.description}
                     onChange={props.param.change.handleChangeDescription}
                     placeholder="Input"
                     required />
 
-                <input className="grid-col-12"
+                <label className="grid-col-12">Valor</label>
+                <input className="grid-col-12 input-style"
                     value={props.param.state.transaction.price}
                     onChange={props.param.change.handleChangePrice}
                     placeholder="R$ 0,00"
+                    type="number"
                     required />
 
-                <button type="submit" className="">Adicionar Transação</button>
+                <button type="submit" className="grid-col-12 input-style submit-style">Adicionar Transação</button>
 
             </form>
 
