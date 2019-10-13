@@ -1,6 +1,6 @@
 # test-viavarejo
 
-* Teste o projeto: [challenge-enext](https://josiel27.github.io/test-viavarejo/).
+* Teste o projeto: [GitPage - Test-Viavarejo](https://josiel27.github.io/test-viavarejo/).
 
 ## Como usar
 
