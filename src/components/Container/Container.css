@@ -5,8 +5,7 @@
 
 /* Ajustando a quebra do conteudo do container, para dispositivos com a resolucao menor que 1024px */
 @media (max-width: 1024px) {
-    .responsive-ajust div {
+    .responsive-ajust > div {
         width: 100%;
     }
 }
-

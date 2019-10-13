@@ -21,7 +21,7 @@ class App extends Component {
     try {
       const elements = JSON.parse(localStorage.getItem(`@test-viavarejo/transactions`));
       if (elements) {
-        for (const [index, value] of elements.entries()) {
+        for (const [index, value] of elements.entries()) { 
           itemsTableTh.push(value)
         }
         this.setState({ localStorageTransactions: itemsTableTh })

@@ -18,10 +18,13 @@ const Extract = props => {
             for (const [index, value] of elements.entries()) {  //para cada element adiciona um tr na tabela
                 itemsTableTh.push(
                     <tr key={index} className="table-extract-body">
-                        <td>
-                            {(value.transaction === 'Venda') ? <span>+</span> : null}
-                            {(value.transaction === 'Compra') ? <span>-</span> : null}
-                            {value.description}</td>
+                        <td className="grid-row">
+                            {(value.transaction === 'Venda') ? <span className="grid-col-1">+</span> : null}
+                            {(value.transaction === 'Compra') ? <span className="grid-col-1">-</span> : null}
+                            <div className="grid-col-8 desc-style">
+                                {value.description}
+                            </div>
+                        </td>
                         <td>{formatPrice(parseFloat(value.price))}</td>
                     </tr>
                 )
@@ -34,28 +37,29 @@ const Extract = props => {
         }
     } catch (error) { console.log(error) };
 
-
     return (
         <div className="extract">
             <div className="title-extract">Extrato</div>
-            <table className="table-extract">
-                <thead>
-                    <tr>
-                        <th>Mercadoria</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {/* Carrega as tr na tabela */}
-                    {itemsTableTh}
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Total</th>
-                        <th>{formatPrice(valueTotal)}</th>
-                    </tr>
-                </tfoot>
-            </table>
+            {itemsTableTh.length > 0?
+                <table className="table-extract">
+                    <thead>
+                        <tr>
+                            <th>Mercadoria</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {/* Carrega as tr na tabela */}
+                        {itemsTableTh}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <th>{formatPrice(valueTotal)}</th>
+                        </tr>
+                    </tfoot>
+                </table>
+                : <div className="no-extract">SEM EXTRATO - Adicione uma nova transação</div>}
 
         </div>
     );

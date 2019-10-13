@@ -7,6 +7,12 @@
 /* Titulo do extrato */
 .title-extract {
     text-align: center;
+    font-weight: bold;
+}
+
+.no-extract{
+    text-align: center;
+    margin: 1rem;
 }
 
 /* Ajustes na tabela de extrato */
@@ -31,6 +37,7 @@
 thead th {
     border-bottom: 1px solid #adadad;
     padding-left: 3rem !important;
+    
 }
 
 /* Altura das linhas da tabela e bordas separando essa linhas */
@@ -48,4 +55,40 @@ tfoot th {
 tbody td>span {
     margin-right: 1rem;
     margin-left: 0.5rem;
+}
+
+/* AJUSTES NA QUEBRA DE LINHA DA TABELA */
+.desc-style{
+    word-wrap: break-word;
+    text-align: left;
+    width: 40vw !important;
+    display: initial !important;
+}
+.table-extract-body span{
+    width: 1%;
+}
+
+/* AJUSTES NA QUEBRA DE LINHA DA TABELA */
+@media (max-width: 600px) {
+    .desc-style{
+        width: 75vw !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .desc-style{
+        width: 50vw !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .desc-style{
+        width: 70vw  !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .desc-style{
+        max-width: 400px;
+    }
 }

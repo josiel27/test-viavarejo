@@ -7,7 +7,6 @@
 .grid-container {
   width: 100%;
   margin: auto;
-  margin-top: 1.5rem;
 }
 
 .grid-row {
@@ -69,4 +68,13 @@
 
 .grid-row, .grid-col-12 {
   width: 100%;
+}
+
+
+/* Ajustando a largura do menu conforme a responsividade dos dispositivos */
+@media (min-width: 768px) {
+  .grid-container {
+   margin-top: 1.5rem
+  }
+  
 }
