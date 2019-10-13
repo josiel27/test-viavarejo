@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/test-viavarejo/static/css/main.b2e4875c.chunk.css",
+    "main.js": "/test-viavarejo/static/js/main.daefa96d.chunk.js",
+    "main.js.map": "/test-viavarejo/static/js/main.daefa96d.chunk.js.map",
+    "runtime-main.js": "/test-viavarejo/static/js/runtime-main.bdd26b81.js",
+    "runtime-main.js.map": "/test-viavarejo/static/js/runtime-main.bdd26b81.js.map",
+    "static/js/2.4cab9a4c.chunk.js": "/test-viavarejo/static/js/2.4cab9a4c.chunk.js",
+    "static/js/2.4cab9a4c.chunk.js.map": "/test-viavarejo/static/js/2.4cab9a4c.chunk.js.map",
+    "index.html": "/test-viavarejo/index.html",
+    "precache-manifest.597fed7a335cdbd52f68131f38d4850e.js": "/test-viavarejo/precache-manifest.597fed7a335cdbd52f68131f38d4850e.js",
+    "service-worker.js": "/test-viavarejo/service-worker.js",
+    "static/css/main.b2e4875c.chunk.css.map": "/test-viavarejo/static/css/main.b2e4875c.chunk.css.map",
+    "static/media/index.css": "/test-viavarejo/static/media/Lato-Regular.2d36b1a9.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdd26b81.js",
+    "static/js/2.4cab9a4c.chunk.js",
+    "static/css/main.b2e4875c.chunk.css",
+    "static/js/main.daefa96d.chunk.js"
+  ]
+}
