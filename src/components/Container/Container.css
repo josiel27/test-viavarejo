@@ -1,0 +1,13 @@
+/* AJUSTE DA LARGURA MAXIMA DO CONTEUDO */
+
+.responsive-ajust {
+    max-width: 1100px;
+}
+
+
+@media (max-width: 1024px) {
+    .responsive-ajust div {
+        width: 100%;
+    }
+}
+

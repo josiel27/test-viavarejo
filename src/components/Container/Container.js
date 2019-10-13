@@ -6,7 +6,7 @@ import Extract from '../Extract/Extract';
 const Container = props => {
     return (
         <div className="grid-container">
-            <div className="grid-row">
+            <div className="grid-row responsive-ajust">
                 <div className="grid-col-5 ">
                     <NewTransaction param={props} />
                 </div>
