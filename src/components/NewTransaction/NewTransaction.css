@@ -1,0 +1,82 @@
+/* Div pai do conteudo na nova transacao */
+
+.transaction {
+    width: 100%;
+    padding: 16px;
+    margin: 0.5rem;
+    border: 1px solid #adadad;
+    border-radius: 3px;
+}
+
+/* Ajustes no titulo da nova transacao */
+
+.transaction-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* REMOVE O SPIN DO TYPE BUTTON NUMBER */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Style dos inputs do formulario */
+
+form, label {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    justify-content: left !important;
+}
+
+.input-style {
+    height: 35px;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid #adadad;
+}
+
+.submit-style {
+    background: #333333;
+    color: white;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    /* Div pai do conteudo na nova transacao */
+    .transaction {
+        border: none;
+        border-radius: 0px;
+        border-bottom: 1px solid #adadad;
+    }
+    .transaction-title {
+        display: none;
+    }
+}
+
+/* AJUSTES NA VERSAO TABLET PARA APRESENTAR O FORM DE NOVA TRANSACAO ALINHANDO OS INPUTS NAS COLUNAS */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .type-transaction {
+        width: 20% !important;
+    }
+    .merchandise-name {
+        width: 50% !important;
+        margin-left: 5%;
+    }
+    .price-value {
+        width: 20% !important;
+        margin-left: 5%;
+    }
+    .submit-style {
+        width: 30% !important;
+        float: right !important;
+    }
+}

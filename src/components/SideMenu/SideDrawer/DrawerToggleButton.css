@@ -1,0 +1,33 @@
+/* Style do botao de menu em dispositivos com <769px */
+.toggle-button {
+    height: 23px;
+    padding: 0px;
+    margin-right: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Remove a outline do botao de menu quando focado */
+.toggle-button-line:focus {
+    outline: none;
+}
+
+/* Adiciona as propiedas no botao de menu em dispositivos com <769px  */
+.toggle-button-line {
+    width: 25px;
+    height: 2px;
+    background: black;
+    text-decoration: none;
+}
+
+/* Esconde o botao de menu com uma resolucao acima de 769px */
+@media (min-width: 769px) {
+    .toggle-button {
+        display: none;
+    }
+}

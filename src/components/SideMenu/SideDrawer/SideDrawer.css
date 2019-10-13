@@ -1,0 +1,63 @@
+/* Propiedades do menu lateral */
+.side-drawer {
+    height: 100%;
+    width: 80%;
+    background: #333333;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    transform: translateX(101%);/* Define a posicao quando fechado */
+    transition: transform 0.3s ease-out;/* Efeito de transicao ao abrir o menu */
+    font-size: 1.3rem;
+}
+
+/* Define a posicao quando aberto */
+.side-drawer.open {
+    transform: translateX(0)
+}
+
+/* Propiedades do conjunto de botoes menu */
+.side-drawer ul {
+    height: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Propiedades do botoes menu */
+.side-drawer li {
+    color: white;
+    padding: 0.5rem;
+    text-align: right;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+/* Efeito ao passar o mouse nos botoes de menu */
+.side-drawer li:hover {
+    background: #c4c4c4;
+    color: black;
+}
+
+/* Propiedades do botao close do menu lateral (X) */
+.close-side-menu {
+    color: white;
+    margin: 2rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* Efeito ao passar o mouse nos botao close(X) de menu */
+.close-side-menu:hover {
+    transform: scale(1.05);
+}
+
+/* Ajustando a largura do menu conforme a responsividade dos dispositivos */
+@media (min-width: 768px) {
+    .side-drawer {
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,80 @@
+/* 
+*
+* GRID RESPONSIVE
+*
+*/
+
+.grid-container {
+  width: 100%;
+  margin: auto;
+}
+
+.grid-row {
+  display: table;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+[class*="grid-col-"] {
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-row, .grid-col-1 {
+  width: 8.33%;
+}
+
+.grid-row, .grid-col-2 {
+  width: 16.66%;
+}
+
+.grid-row, .grid-col-3 {
+  width: 25%;
+}
+
+.grid-row, .grid-col-4 {
+  width: 33.33%;
+}
+
+.grid-row, .grid-col-5 {
+  width: 41.66%;
+}
+
+.grid-row, .grid-col-6 {
+  width: 50%;
+}
+
+.grid-row, .grid-col-7 {
+  width: 58.33%;
+}
+
+.grid-row, .grid-col-8 {
+  width: 66.66%;
+}
+
+.grid-row, .grid-col-9 {
+  width: 75%;
+}
+
+.grid-row, .grid-col-10 {
+  width: 83.33%;
+}
+
+.grid-row, .grid-col-11 {
+  width: 91.66%;
+}
+
+.grid-row, .grid-col-12 {
+  width: 100%;
+}
+
+
+/* Ajustando a largura do menu conforme a responsividade dos dispositivos */
+@media (min-width: 768px) {
+  .grid-container {
+   margin-top: 1.5rem
+  }
+  
+}
