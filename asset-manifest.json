@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/test-viavarejo/static/css/main.b2e4875c.chunk.css",
-    "main.js": "/test-viavarejo/static/js/main.daefa96d.chunk.js",
-    "main.js.map": "/test-viavarejo/static/js/main.daefa96d.chunk.js.map",
+    "main.js": "/test-viavarejo/static/js/main.b1a39e1b.chunk.js",
+    "main.js.map": "/test-viavarejo/static/js/main.b1a39e1b.chunk.js.map",
     "runtime-main.js": "/test-viavarejo/static/js/runtime-main.bdd26b81.js",
     "runtime-main.js.map": "/test-viavarejo/static/js/runtime-main.bdd26b81.js.map",
     "static/js/2.4cab9a4c.chunk.js": "/test-viavarejo/static/js/2.4cab9a4c.chunk.js",
     "static/js/2.4cab9a4c.chunk.js.map": "/test-viavarejo/static/js/2.4cab9a4c.chunk.js.map",
     "index.html": "/test-viavarejo/index.html",
-    "precache-manifest.3497b13c232abd545e8a8852c18cea27.js": "/test-viavarejo/precache-manifest.3497b13c232abd545e8a8852c18cea27.js",
+    "precache-manifest.ea6d241df23d141c84568347e571f73b.js": "/test-viavarejo/precache-manifest.ea6d241df23d141c84568347e571f73b.js",
     "service-worker.js": "/test-viavarejo/service-worker.js",
     "static/css/main.b2e4875c.chunk.css.map": "/test-viavarejo/static/css/main.b2e4875c.chunk.css.map",
     "static/media/index.css": "/test-viavarejo/static/media/Lato-Regular.2d36b1a9.ttf"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.bdd26b81.js",
     "static/js/2.4cab9a4c.chunk.js",
     "static/css/main.b2e4875c.chunk.css",
-    "static/js/main.daefa96d.chunk.js"
+    "static/js/main.b1a39e1b.chunk.js"
   ]
 }

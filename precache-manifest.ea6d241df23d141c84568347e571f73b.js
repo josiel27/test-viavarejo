@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4036f11b0abe0b21e261a51b691a9a99",
+    "revision": "f063de1f0aa8f1583034cb35a8d3fc54",
     "url": "/test-viavarejo/index.html"
   },
   {
-    "revision": "caa2ddaab08b74283aef",
+    "revision": "0fefcb4a8c2f164563dd",
     "url": "/test-viavarejo/static/css/main.b2e4875c.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/test-viavarejo/static/js/2.4cab9a4c.chunk.js"
   },
   {
-    "revision": "caa2ddaab08b74283aef",
-    "url": "/test-viavarejo/static/js/main.daefa96d.chunk.js"
+    "revision": "0fefcb4a8c2f164563dd",
+    "url": "/test-viavarejo/static/js/main.b1a39e1b.chunk.js"
   },
   {
     "revision": "2b7c69943415c9e3b2bd",
